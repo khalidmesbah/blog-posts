@@ -1,0 +1,79 @@
+--
+type: article
+title: naming convention
+description: how to name things in programming
+tags: - programming - style
+---
+
+## what is a naming convention
+
+> In computer programming, a naming convention is a set of rules for choosing the character sequence to be used for identifiers which denote variables, types, functions, and other entities in source code and documentation.. (source: Wikipedia)
+
+> Naming conventions in programming are guidelines or rules that dictate how variables, functions, classes, and other programming elements should be named.
+
+## why to use a consistant naming convention
+
+benefits of consistent and meaningful naming conventions
+
+- to prevent naming conflicts
+- to improve overall quality and maintainability of the code
+- to make it easier to identify the purpose and scope of a particular code
+- to improve code readability and maintainability.
+
+## types of naming conventions
+
+1. CamelCase: each word or abbreviation starts with a capital letter, except for the first word. For example:
+
+```
+myVariable
+calculateTotalAmount
+customerID
+```
+
+2. PascalCase: the first letter of every word is capitalized. PascalCase is often used for class names and other types. For example:
+
+```
+Person
+CalculateTotalAmount
+CustomerID
+```
+
+3. snake_case: words are separated by underscores, and all letters are lowercase. For example:
+
+```
+my_variable
+calculate_total_amount
+customer_id
+```
+
+4. kebab-case: words are separated by hyphens ("-") instead of underscores, and all letters are lowercase.
+
+It is commonly used in URLs and file names. For example:
+
+```
+my-variable
+calculate-total-amount
+customer-id
+```
+
+5. UPPER_CASE: In UPPER_CASE, words are capitalized, and they are typically separated by underscores. It is commonly used for constants. For example:
+
+```
+MY_VARIABLE
+CALCULATE_TOTAL_AMOUNT
+CUSTOMER_ID
+```
+
+6. Hungarian notation: Hungarian notation prefixes variable names with one or more characters that represent the variable's type or purpose. While it was more popular in older programming languages, it is less commonly used nowadays due to improved IDEs and strongly typed languages. For example:
+
+```
+strName (for a string)
+nCount (for an integer)
+```
+
+## the naming convention i use, and recommend, and thier uses cases
+
+- camelCase `--fav`: variables
+- PascalCase: component names, class names
+- kebab-case: .md or .mdx file names, routes' names, folder names, ID's and classes in CSS,
+- UPPER_CASE: environment variables
