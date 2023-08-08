@@ -7,41 +7,29 @@
       "previewPath": null,
       "fields": [
         {
-          "title": "Title",
+          "title": "type",
+          "name": "type",
+          "type": "string"
+        },
+        {
+          "title": "title",
           "name": "title",
           "type": "string"
         },
         {
-          "title": "Description",
+          "title": "description",
           "name": "description",
           "type": "string"
         },
         {
-          "title": "Publishing date",
-          "name": "date",
-          "type": "datetime",
-          "default": "{{now}}",
-          "isPublishDate": true
-        },
-        {
-          "title": "Content preview",
-          "name": "preview",
-          "type": "image"
-        },
-        {
-          "title": "Is in draft",
-          "name": "draft",
-          "type": "draft"
-        },
-        {
-          "title": "Tags",
+          "title": "tags",
           "name": "tags",
           "type": "tags"
         },
         {
-          "title": "Categories",
-          "name": "categories",
-          "type": "categories"
+          "title": "lastmod",
+          "name": "lastmod",
+          "type": "datetime"
         }
       ]
     }
@@ -62,5 +50,5 @@
     "programming",
     "style"
   ],
-  "frontMatter.taxonomy.categories": []
+  "frontMatter.taxonomy.types": ["listicle", "article", "notes", ""]
 }
