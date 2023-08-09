@@ -50,5 +50,10 @@
     "programming",
     "style"
   ],
-  "frontMatter.taxonomy.types": ["listicle", "article", "notes", ""]
+  "frontMatter.taxonomy.types": [
+    "listicle",
+    "article",
+    "notes",
+    ""
+  ]
 }
