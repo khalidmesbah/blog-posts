@@ -25,8 +25,6 @@ lastmod:
   > personal notes about a certain topic/video/podcast/
 - Quiz
   > flash cards and MCQs about a certain topic
-- Problem-Solving
-  > a problem, and it's solution
 - How-to Guide
   > a detailed step-by-step guide on a topic
 - Listicle
@@ -35,10 +33,14 @@ lastmod:
   > a Review about a product, service or course (anything)
 - Case Study
   > a real-life case study that showcases a particular problem and how it was solved.
+- Problem-Solving
+  > a problem, and it's solution
 - Data Structure
   > a data structure
 - Algorithm
   > an algorithm
+- Reaction
+  > my reaction to something(video/article/podcast)
 
 ## Post's Tags
 
