@@ -42,14 +42,6 @@
       "path": "[[workspace]]"
     }
   ],
-  "frontMatter.taxonomy.tags": [
-    "experience",
-    "health",
-    "learning",
-    "productivity",
-    "programming",
-    "style"
-  ],
   "frontMatter.taxonomy.types": [
     "listicle",
     "article",

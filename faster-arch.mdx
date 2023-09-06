@@ -1,0 +1,64 @@
+---
+type: notes
+title: faster arch
+description: how to make arch fast
+tags:
+  - arch
+  - linux
+  - performance
+  - operating system
+lastmod: 2023-08-15
+---
+
+## Cleaning The Pacman cache
+
+with each software update, Pacman fills up with lots of downloadable package files. To clear it out, open up a terminal window and use the following command to clear it out.
+
+```sh
+sudo paccache -r # completely empty all packages in the cache (unsafe)
+sudo paccache -rk1 # manage the versions of programs to delete, rather than indiscriminately removing everything. a safe alternative to the line above.
+sudo paccache -ruk0 # remove uninstalled Arch packages from the Pacman cache,
+```
+
+## Manage Startup Apps
+
+Taking control of this aspect of your operating system is important because too many applications running at startup can quickly eat away at CPU resources and RAM.
+
+```sh
+cd ~/.config/autostart # list all the startup apps
+rm example.desktop # remove a startup app
+```
+
+## Reduce Boot Delay
+
+```sh
+# open the grub file and change GRUB_TIMEOUT=5 to GRUB_TIMEOUT=0
+sudo vim /etc/default/grub
+# generate a new config:
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+## Disable FSCK At boot
+
+Use This Well-Tested Kernel Parameter (Also, Read the Warnings)
+
+`GRUB_CMDLINE_LINUX_DEFAULT="fsck.mode=skip quiet loglevel=0 rd.systemd.show_status=false nowatchdog mitigations=off libahci.ignore_sss=1"`
+
+```sh
+# open the grub file and change the kernel parameter in the grub file
+sudo vim /etc/default/grub
+# generate a new config:
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+## advices
+
+- don't update packages a lot, just once a month
+- don't install outdated packages
+- keep backups
+
+## Resources
+
+[Improving performance - ArchWiki](https://wiki.archlinux.org/title/improving_performance)
+[addictivetips.com](https://www.addictivetips.com/ubuntu-linux-tips/clean-and-speed-up-arch-linux/)
+[How to make your Archlinux faster?](https://www.linkedin.com/pulse/how-make-your-archlinux-faster-sourav-goswami/)

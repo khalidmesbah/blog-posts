@@ -1,0 +1,97 @@
+---
+type: listicle
+title: todos after installing arch
+description: what to do after installing arch
+tags:
+  - arch
+  - linux
+  - operating systems
+lastmod: 2023-08-15
+---
+
+1. Update the System
+
+```sh
+sudo pacman -Syu
+```
+
+2. install your necessary packages
+
+install the necessary packages based on your usage
+
+```sh
+sudo pacman -S git vim
+sudo pacman -S p7zip unrar tar rsync git neofetch htop exfat-utils fuse-exfat ntfs-3g flac jasper aria2
+```
+
+3. Configure PacMan and mirrors
+
+```sh
+# uncomment the following
+  # - Color
+  # - ParallelDownloads
+  # - ILoveCandy
+sudo vim /etc/pacman.conf
+# sudo pacman -Sy
+sudo pacman -Sy
+# update the mirror list
+# install reflector
+sudo pacman -S reflector
+# create a backup file of the default mirror list.
+sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
+# fetch the top 10 fastest servers and add them to the mirror list.
+sudo reflector --verbose --latest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+# update the pacman
+sudo pacman -Sy
+```
+
+4. updating cpu
+
+```sh
+# install the microcode updates to ensure system stability.
+sudo pacman -S intel-ucode # for intel
+sudo pacman -S amd-ucode # for amd
+# update grub
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+5. Install Aur Helper and flatbak
+
+Yay is a popular aur helper, which simplifies the process of installing and managing packages from AUR.
+
+```sh
+# install yay aur helper's dependencies
+sudo pacman -S --needed base-devel git
+# clone the github repo
+git clone https://aur.archlinux.org/yay.git
+# navigate to the yay directory
+cd yay
+# install yay
+makepkg -si
+```
+
+flatbak
+
+```sh
+sudo pacman -S flatpak # install faltbak
+```
+
+6. Get additional kernels
+   it’s a good idea to have multiple kernels installed as a safety precaution. If one kernel fails to boot, you can use another one to start the operating system.
+
+```sh
+sudo pacman -S linux-lts linux-lts-headers
+```
+
+7. manage backups
+
+Use Timeshift
+
+```sh
+yay -Sy timeshift
+```
+
+
+## Resources
+
+[10 Things To Do After Installing Arch Linux 2023 ‣ KSKRoyal](https://kskroyal.com/10-things-to-do-after-installing-arch-linux-2023/)
