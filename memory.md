@@ -91,6 +91,7 @@ malloc() // heap segment
 
 - memory allocated during compile time
 - fixed and cannot be increased or decreased during run time
+- it happens in the stack segment
 
 ## dynamic memory allocation
 
@@ -108,7 +109,6 @@ malloc() // heap segment
 
 - stack segment is where memory is allocated or deallocated in a defined order
 - heap segment is where memory is allocated or deallocated randomly without any order
-
 
 ## notes
 

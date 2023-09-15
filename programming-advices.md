@@ -1,7 +1,7 @@
 ---
 type: notes
 title: programming advices
-description: save your time and listen to experts
+description: how to become an excellent software engineer
 tags:
   - life hack
   - advices
@@ -42,6 +42,7 @@ want to learn not the whole project
 ## learn databases
 
 - learn the fundamentals of databases and take a look at the file structure
+- 
 
 ## be consistent
 
@@ -147,5 +148,40 @@ document your projects
 
 - your health is just more important 
 
+## software/solutions architecture
+### Infrastructure
+
+- operating systems
+- network
+- system administration
+- security
+
+### Web application servers
+
+### Browser behaviour
+- cookies
+- local storage
+- session storage
+- http
+
+## Tips
+
+- keep your resume updated
+- prioritize programming basics (DSA)
+- create a personal website
+- create a linkedin account
+- apply for internships as early as possible
+- attend hackathons
+- join a research lab
+- learn from online courses
+- join a computer science club
+- focus on yourself
+- separate the logic from the code => think twice, code once
+  - focus on the logic first
+  - focus on the code next
+- 
+
+
 ## resources
 - [The SECRETS to becoming a GREAT software engineer](https://youtu.be/Czg8C3wEpME?si=iYZ7A9MmeirGuveM)
+- [My Top 10 Tips For Computer Science Students](https://youtu.be/EEFd5tcYg88?si=5dlYnp-NaMkJMTe8)
