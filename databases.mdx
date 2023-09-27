@@ -1,0 +1,99 @@
+---
+type: notes
+title: databases
+description: what are databases
+tags:
+  - databases
+lastmod: 2023-09-25
+---
+
+## what is a database
+
+- a usually large collection of data organized especially for rapid search and retrieval
+- Databases are organized data storage (often, but not exclusively for computers)
+-
+
+## the use of databases
+
+- store information in an organized way to make data useful
+- How a database is organized is dependent on how the information it stores will be used
+-
+
+## forms of the databases
+
+What makes it hard to talk about databases is how many different forms they can take
+
+they can be in any form
+
+e.g:
+
+- digital database that is consumed by an application
+- library
+- physical ledger book
+- a text file
+- a spreedsheet of addresses
+- the to-do sticky notes on my fridge
+- ...etc
+
+## most popular types of databases
+
+### SQL/ relational databases
+
+SQL type databases are organized to be query-able using SQL (Structured Query Language) and organize information in tables.
+
+#### ideal usecases
+
+Repeating, structured data, such as:
+
+- user information
+- product inventories
+- blogs
+
+#### Common SQL/Relational Database Technologies:
+
+- MySQL
+- PostgreSQL
+- MariaDB
+- Microsoft SQL Server
+
+### NoSQL/ non-relational databases
+
+These databases can take a few different forms and are used for large sets of distributed data (like for use in micro service architectures).
+
+#### Ideal Use Cases:
+
+Partially structured or un-structured data: really big collections of complex data, caches
+
+#### Types of NoSQL Databases:
+
+- Key-Value store
+  A key-value store is a non-relational, noSQL database type that stores data in key-value pairs (exactly like objects or dictionaries in programming).
+  These databases are fast because the keys are unique and easily searchable, and they are flexible, because these key value pairs can store any combination of data types required.
+- Document store
+  A document store is a non-relational, noSQL database type that organizes data into documents.
+  Documents can hold any shape of data, which means document stores can easily handle data with no structure or that is arbitrarily nested, which can be a headache to account for in a relational way.
+- Column-oriented
+  Data organized by column instead of by row.
+  This architecture scales easily and makes fast, efficient queries.
+  I'm including this architecture as a NoSQL type dbms, but this architecture can actually be used with SQL as well.
+
+#### Common NoSQL Database Technologies:
+
+- Redis [Key Value store]
+- MongoDB [Document store]
+- Elasticsearch [Document store]
+- Apache Cassandra [Column-oriented]
+
+## schema
+
+- the tables of a database, the columns and the column types of all of those tables can collectively be referred to as the schema
+- describes the structure of a database
+- the schema of a database is the tables of a database and their columns and column types
+- the architecture or structure of a relational database, a statement of its tables and their columns
+
+## resources
+
+## notes
+
+- Structure of a relational database table is like a spreadsheet with columns
+-

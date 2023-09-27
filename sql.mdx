@@ -1,0 +1,53 @@
+---
+type: notes
+title: SQL
+description: structured query language
+tags:
+  - database
+  - sql
+lastmod: 2023-09-25
+---
+
+## what is sql
+
+- a programming language that is used to interact with sql type databases
+- the standard language for relational database management systems
+- common commands are the same across all relational databases
+- for the management of database systems and interaction with the data stored in them
+- SQL is the standard language for relational database management systems
+
+## what is psql
+
+- an interactive postgres terminal
+- psql in terminal allows us to execute SQL commands
+- Non-meta psql commands must end in semi colons
+
+## Common psql commands
+
+open psql: psql postgres
+connect to a database: \c <database_name>
+create a new database: create database <database_name>
+get out of psql: \q
+
+A good list of helpful meta-commands can be found from Chartio [here](https://dataschool.com/learn-sql/meta-commands-in-psql/).
+
+## Meta Commands
+
+- `\l` List databases
+- `\c` Connect to a database
+- `\dt` Display Tables in a database
+- `\q` Quit out of psql to normal terminal
+
+## sql filters
+
+sql filtering words can be added to refine and hone commands
+
+Common filter words are WHERE, BETWEEN, LIKE, IF NULL, IF NOT NULL
+
+## Notes
+
+- it's convention to write command words in all caps and user input values in lowercase and with underscores
+- database names are usually plural and identify the environment that they are for (development, production, testing)
+- you have to end your commands with a semicolon
+- in psql, systems level commands that allow you to move amongst, manage and view information about databases on the system use the backslash character before them, and these commands are known as meta commands, and they are the only ones that don't need semi-colons after them
+- one single psql system can have multiple databases and each database can have multiple tables

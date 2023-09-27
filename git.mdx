@@ -9,20 +9,74 @@ tags:
 lastmod: 2023-09-01
 ---
 
-## What is git
+## Terminology
 
-a distributed version control system which is a software that helps you control (or manage) the different versions of something (typically source code).
+### source code manager / version control system
 
-<Video id="N9OjaQ0XtKQ" className="w-[500px] h-[500px]" />
-<CustomImage id="1W_NQ6SXCkjmg3yg5yupGKYXi4B4LagDW" alt="test" className="w-[300px]" />
+A version control system (abbreviated as VCS) or A source code manager (abbreviated as SCM) is a tool that manages different versions of source code.
 
-## What is the main point of version control systems
+### git
 
-the main point of a version control system is to help you maintain a detailed history of the project as well as the ability to work on different versions of it.
+- a distributed version control system (VCS) which is a software that helps you control (or manage) the different versions of something (typically source code).
+- Git is fundamentally a content-addressable filesystem with a VCS user interface written on top of it.
 
-## Why having a detailed history of a projectj is important
+### commit
 
-Having a detailed history of a project is important because it lets you see the progress of the project over time. If needed, you can also jump back to any point in the project to recover data or files.
+- a snapshot, Git thinks of its data like a set of snapshots of a mini file system.
+- Every time you commit, or save the state of your project in Git, it basically takes a
+  picture of what all your files look like at that moment and stores a reference to that
+  snapshot.
+- git records changes to files as commits
+- the commits are saved in the repository
+- a good philosophy is to commit early and commit often
+- The goal is that each commit has a single focus.
+- Each commit should record a single-unit change. Now this can be a bit subjective (which is totally fine), but each commit should make a change to just one aspect of the project.
+
+#### writing a good commit message
+
+The best way that I've found to come up with a commit message is to finish this phrase, "This commit will...". However, you finish that phrase, use that as your commit message.
+
+Do
+
+- do keep the message short (less than 60-ish characters)
+- do explain what the commit does (not how or why!)
+- Above all, be consistent in how you write your commit messages!
+
+Don't
+
+- do not explain why the changes are made (more on this below)
+- do not explain how the changes are made (that's what git log -p is for!)
+- do not use the word "and", if you have to use "and", your commit message is probably doing too many changes - break the changes into separate commits
+
+When you're writing the commit message, the first line is the message itself. After the message, leave a blank line, and then type out the body or explanation including details about why the commit is needed (e.g. URL links).
+
+### repository
+
+- A repository is a directory which contains your project work, as well as a few files which are used to communicate with Git.
+- Repositories can exist either locally on your computer or as a remote copy on another computer.
+- A repository is made up of commits.
+
+### checkout
+
+A checkout is when content in the repository has been copied to the Working Directory.
+
+### Staging Area / Staging Index / Index
+
+- A file in the Git directory that stores information about what will go into your next commit.
+- You can think of the staging area as a prep table where Git will take the next commit.
+- Files on the Staging Index are poised to be added to the repository.
+
+### SHA
+
+- A SHA is basically an ID number for each commit.
+- Here's what a commit's SHA might look like: e2adf8ae3e2e4ed40add75cc44cf9d0a869afeb6.
+- It is a 40-character string composed of characters (0–9 and a–f) and calculated based on the contents of a file or directory structure in Git.
+- "SHA" is shorthand for "Secure Hash Algorithm".
+
+### Branch
+
+- A branch is when a new line of development is created that diverges from the main line of development.
+- This alternative line of development can continue without altering the main line.
 
 ## What are the types of version control system models
 
@@ -36,4 +90,187 @@ There are two main types of version control system models:
 git: version control tool
 github: service that hosts git projects
 
+## examples of VCSs
+
+- git
+- subversion
+- mercurial
+
+## What is the use of a VCS/SCM
+
+- help you maintain a detailed history of the project as well as the ability to work on different versions of it.
+- allows you to:
+- revert files back to a previous state
+- revert the entire project back to a previous state
+- review changes made over time
+- see who last modified something that might be causing a problem
+- who introduced an issue and when
+
+## What are the types of version control system models
+
+There are two main types of version control system models:
+
+1. the centralized model - all users connect to a central, master repository
+2. the distributed model - each user has the entire repository on their computer
+
+## Why having a detailed history of a project is important
+
+because it
+
+- lets you see the progress of the project over time.
+- If needed, you can also jump back to any point in the project to recover data or files.
+
+## git workflow
+
+<Video id="dVil8e0yptQ" className="w-[400px] h-[400px]">
+<Video id="rFtUkk-sCqw" className="w-[400px] h-[400px]">
+<CustomImage id="14CP7U1VRaAhraTGEr4h2GQfyT7JsDGcu" alt="git-workflow">
+
+## `.git`
+
+- contains all the necessary files and directories that git will use to keep track of everything
+- This .git directory is the "repo"!
+- This is where git records all of the commits and keeps track of everything!
+- This .git directory is the brain/storage center for the repository.
+- It holds all of the configuration files and directories and is where all of the commits are stored.
+- If you want to back up or clone your repository, copying this single directory elsewhere gives you nearly everything you need.
+
+### some of the contents of the `.git` directory
+
+- config file - where all project specific configuration settings are stored.
+- description file - this file is only used by the GitWeb program.
+- hooks directory - this is where we could place client-side or server-side scripts that we can use to hook into Git's different lifecycle events
+- info directory - contains the global excludes file
+- objects directory - this directory will store all of the commits we make
+- refs directory - this directory holds pointers to commits (basically the "branches" and "tags")
+
+## globbing
+
+Globbing lets you use special characters to match patterns/characters.
+
+In the .gitignore file, you can use the following:
+
+- blank lines can be used for spacing
+- `#` - marks line as a comment
+- - - matches 0 or more characters
+- ? - matches 1 character
+- [abc] - matches a, b, or c
+- ** - matches nested directories - a/**/z matches
+  - a/z
+  - a/b/z
+  - a/b/c/z
+-
+
+## tags
+
+it's used to add a marker on a specific commit aka to label commits
+
+### types of tags
+
+- annotated flag
+  - Annotated tags are recommended because they include a lot of extra information such as:
+    - the person who made the tag
+    - the date the tag was made
+    - a message for the tag
+- lightweight flag
+
+Running `git tag -a v1.0` will tag the most recent commit.
+
+But what if you wanted to tag a commit that occurred farther back in the repo's history?
+
+All you have to do is provide the SHA of the commit you want to tag! `git tag -a v1.0 a87984`
+
+the git tag command is used to add a marker on a specific commit.
+
+The tag does not move around as new commits are added.
+
+## branches
+
+the branch moves when a new commit is added
+
+when you create a new branch it will not be the current one automatically
+
+A branch is used to do development or make a fix to the project that won't affect the project (since the changes are made on a branch).
+Once you make the change on the branch, you can combine that branch into the master branch
+
+One thing to note is that you can't delete a branch that you're currently on.
+So to delete the sidebar branch, you'd have to switch to either the master branch or create and switch to a new branch.
+
+branches let us work in isolation from the rest of the project
+
+- `git branch` list all branch names in the repository
+- `git branch <branch-name>` create a new branch
+- `git branch -d <branch-name>` delete a branch
+- `git branch -D <branch-name>` force delete a branch (never use this)
+- `git branch -m <new-branch-name>` rename the checked-out branch
+- `git branch -m <old-branch-name> <new-branch-name>` rename a non-head branch
+- `git checkout <branch-name>` switch to a branch if it exists
+- `git -b checkout <branch-name>` switch to a branch and create it if not exists
+- `git switch <branch-name>` switch the between branches
+- `git log --oneline --decorate --graph --all` Running this command will show all branches and commits in the repository:
+
+## merging
+
+- one a merge happens it makes a commit and the merge commit will happen on the head branch
+- making a merge makes a commit
+- When a merge happens, Git will:
+  - look at the branches that it's going to merge
+  - look back along the branch's history to find a single commit that both branches have in their commit history
+  - combine the lines of code that were changed on the separate branches together
+  - makes a commit to record the merge
+- `git merge <name-of-branch-to-merge-in>` is used to combine Git branches:
+- Whichever branch the special HEAD pointer is pointing at, that's the branch that will have the merge commit.
+- hel
+- whihc one is this
+
+### types of merges
+
+- regular merge
+- fast-forword merge
+
+## notes
+
+- `git init`: git is a command and init is a sub command
+- `mkdir -p udacity-git-course/new-git-project && cd $_`: the `$_` part is sneaky
+- `git log -p` === `git show`
+- `git init`: convert a directory into a git repository
+- If you've already run git init before it's ok – running git init multiple times doesn't cause any problems since it just re-initializes the Git directory.
+- for Git to track a file, it needs to be committed to the repository
+- for a file to be committed, it needs to be in the Staging Index
+- the git add command is used to move files from the Working Directory to the Staging Index
+- The text "Initial commit" isn't special, but it's the de facto commit message for the very first commit.
+- `$ git commit -m "Initial commit"`: the text "Initial commit" is used as the commit message. Be aware that you can't provide a description for the commit, only the message part.
+- `.png` will match `trees.png` and `trees.PNG`
+- the .gitignore file is used to tell Git about the files that Git should not track.
+- a tag is an extra label for a commit that indicates useful information
+- a tag lets you point out particular commits to make them stand out from others, e.g: `git tag -a v1.0`
+- a tag stays locked to a commit even even as more commits are added to the repository
+- `git init`: create a new repository
+- `git clone`: copy an existing repository
+- `git log`: review existing commits
+- `git status`: to see the status of a repository
+- `git add`: add files from the working directory to the staging index
+- `git commit`: take files from the staging index and save them in the repository
+- `git diff`: displays the difference between two versions of a file
+- `git diff`: command can be used to see changes that have been made but haven't been committed, yet.
+- `git tag`: add tags to specific commits
+- `git tag`: ineract with the repository's tags
+- `git tag`: display all the tags that are in the repository
+- `git branch`: create branches that let you develop different features of your project in parallel
+- `git checkout`: switch between different branches and tags
+- `git merge`: combines changes in different branches
+- `git tag -d v1.0`: delete a tag
+- ``:
+- CAREFUL: In the command above (git tag -a v1.0) the -a flag is used. This flag tells Git to create an annotated flag. If you don't provide the flag (i.e. git tag v1.0) then it'll create what's called a lightweight tag.
+- you should always use annotated tags.
+- tags are associated with a specific commit. This is why the tag is on the same line as the commit's SHA.
+- `-d === --delete`
+- `^` relative commit reference
+- `git reset --hard HEAD^` : undo the merge
+- git doesn't allow you to rename a remote repo
+- it's not possible to create a new branch in a remote repository, but we can publish an existing local branch on a remote repo
+- k
+
 ## Resources
+
+- [Version Control With GIT](https://learn.udacity.com/courses/ud123)

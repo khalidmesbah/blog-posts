@@ -1,0 +1,46 @@
+---
+type: notes
+title: postgres
+description: setup postgres to make a node api on arch
+tags:
+  - database
+  - postgres
+  - arch
+  - api
+lastmod: 2023-09-25
+---
+
+## what is postgres
+
+- postgres === postgreSQL
+- relational, SQL type database
+- k
+
+## why postgres
+
+- Availability - It is open source and free to use with any project
+- Common - It is a relational, SQL database which is the most common type of database right now
+- Popular and well tested - Postgres is a very popular database, and a common choice among enterprise software
+- Transferable skills - Because Postgres uses SQL, what you learn with Postgres is entirely transferable to working with a MySQL database or any other SQL database
+
+## the primary key column
+
+- it is most common to have an id column to be the primary key column for a table
+- `id serial primary key` is used to differentiate between different rows that may be identical
+- serial: the values will of the id column will be auto-incrementaing and one greater than the row previous
+- The Primary Key is a piece of information unique to each row, often an ID.
+- a table column whose values are
+  - an auto incrementing number
+  - guaranteed to be unique
+
+## How to install postgres on arch
+
+look at this useful [gist](https://gist.github.com/NickMcSweeney/3444ce99209ee9bd9393ae6ab48599d8)
+
+## notes
+
+- data stored in postgres database doesn't have an order, it's not sorted, the data is just essentially in whatever order it was inserted into the table
+- `su postgres` This switches the terminal user from Root (the default) to postgres, which we will use to access the database.
+- `psql postgres` This will enter you into the interactive postgres terminal. Happy Experimenting!
+- Database names should use underscores
+-

@@ -1,0 +1,116 @@
+---
+type: notes
+title: G/C-UI
+description: the power of cli
+tags:
+  - cli
+  - gui
+  - shell
+  - linux
+lastmod: 2023-09-18
+---
+
+## the shell
+
+- a command line interface for running programs
+- it runs programs for you
+- it recieves the input => run programs => send the output
+- the vast majority of web servers in the wild run on linux, and the shell is a vital tool for deployment and remote administration on linux servers
+- fast and flexibile
+- command line interpreter
+- to interact with the shell we use a program called the termianl
+- A Unix shell is both a command interpreter and a programming language.
+- it's more than a user interface, it's also a programming language
+
+### scripts
+
+files containing the shell commands are called shell scripts
+
+<Video id="-zF-XebfzBE" />
+
+### variables
+
+<Video id="Dx3WlMZk8iA" />
+
+#### shell variables
+
+- internals to the shell program itself
+- e.g: LINES and COLUMNS
+
+#### environment variables
+
+- shared with programs that you run from within the shell
+- e.g: PATH and PWD
+- PATH environment variable: tells your system where your program files are
+
+## termianl (termianl emulator) VS TTY (teletype) VS console VS shell VS prompt VS command line VS CLI (command line interface) VS GUI (graphical user interface)
+
+- termianl: tty = input/output environment
+- console: the physical keyboard and monitor attached to a machine
+- shell: command line interpreter
+- prompt: the part before the command line
+- command line: the line we are typing on
+- command line interface: an interface that you can interact with it by typing
+- graphical user interface: an interface that you can interact with by the mouse and keyboard
+
+## termianl
+
+- a program that draws text on a window and lets you type things on the keyboard
+- called termianl emulator
+- display output to the screen
+- accepts input from the keyboard
+- doesn't know what to do with the input, so it needs another program that knows what to do which is the shell
+- when you type things in, the terminal sends what you type to the shell
+- when you press enter
+  - the shell interprets what you wrote as a command
+  - figure out what program you want to run
+  - runs it
+  - send the output back to the termianl
+- you can use the termianl without the shell and using the python interpreter instead
+- programs you can use inside the termianl
+  - shell
+  - python interpreter
+- you can use the shell without the termianl by using shell scripting
+- text input/output environment
+
+## CLI VS GUI
+
+### benefits of CLI
+
+- use less system Resources
+- more
+
+## types of the shell
+
+- bash
+- zsh
+- sh
+- fish
+- cmd
+- powershell
+- ksh
+- csh
+- tcsh
+
+## the linux shell
+
+the Linux shell comes with a long list of commands that can be composed to automate any task imaginable.
+
+This ability to build larger programs from smaller ones is what gives the command line its power and flexibility.
+
+## notes
+
+- how to write clean code
+- A good command line interface is the Linux shell
+- the javascript console is a CLI for the browser, and the shell is the CLI for the whole computer in general
+- the bash shell is the most popular UNIX-style shell
+- you can use the shell without the termianl
+  - by writing shell commands into a file and arrage for your computer to run the shell program on that file (shell scripting)
+- you can use the termianl without the shell
+  - by making it run the python interpreter for example
+- you can interact with a system using either
+  - GUI
+  - CLI
+- a flag is used to alter how a program functions
+- Flags can be used to alter how a program functions and/or what is displayed. 
+- a diff and a patch refer to the same thing
