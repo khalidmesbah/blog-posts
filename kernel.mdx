@@ -1,0 +1,24 @@
+---
+type: notes
+title: kernel
+description: the heart
+tags:
+  - operating systems
+lastmod: 2023-08-10
+---
+
+## about
+
+- the central part of an operating system
+- the most fundamental part of an operating system
+- manages the tasks of the computer and the hardware - most notably memory and CPU time
+- mostly written in the C language
+- the program that controls all other programs on the computer
+
+## the role
+
+- responsible for the creation and destruction of memory space which allows software to run
+- it provides services so that programs can request the use of the network card, the disk or any other piece of hardware (the kernel forwards that request to special programs called drivers which control the hardware)
+- manages the file system
+- sets interrupts for the CPU to enable multitasking
+- many kernels are responsible for ensuring that faulty programs do not interfere with operation of others, by denying access to memory that has not been allocated to them and restrict the amount of CPU time they can consume

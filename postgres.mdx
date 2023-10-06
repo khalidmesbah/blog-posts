@@ -32,6 +32,19 @@ lastmod: 2023-09-25
 - a table column whose values are
   - an auto incrementing number
   - guaranteed to be unique
+- a column with unique identifiers for each row in a table
+
+## the foreign key column
+
+- The Foreign Key is a column that relates each row to in the table to the primary key of another table
+- a reference to the primary key of another table
+
+### why foreign keys
+
+- create a relationship between data in one table with data in another table
+- to connect information from from different tables
+- allow queries to span multiple tables
+- Having a foreign key allows us to query for relationships between two tables of data
 
 ## How to install postgres on arch
 
@@ -43,4 +56,6 @@ look at this useful [gist](https://gist.github.com/NickMcSweeney/3444ce99209ee9b
 - `su postgres` This switches the terminal user from Root (the default) to postgres, which we will use to access the database.
 - `psql postgres` This will enter you into the interactive postgres terminal. Happy Experimenting!
 - Database names should use underscores
--
+- the power of data comes from being able to create and find relationship in the information we collect
+- Part of being a software developer (and this really applies for both front and back end developers) is being able to translate abstract ideas for features or apps into concrete data structures.
+- No where is this more true than in database design. It can be hard to take abstract ideas, identify their data needs, and meet those needs with tables and columns.

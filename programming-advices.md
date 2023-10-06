@@ -14,9 +14,9 @@ lastmod: 2023-08-28
 - Be comfortable with reading others' code and understanding it
 - Coding projects from scratch while learning a specific technology is a big waste of time
 - just code the part you're interested in
-- if you want to learn a specific technology and you're following along a course that teaches you that technology, 
+- if you want to learn a specific technology and you're following along a course that teaches you that technology,
 - stop trying to code the whole project from scratch, instead just download the source code and code only the part you
-want to learn not the whole project
+  want to learn not the whole project
 
 [A Programming Skill You Don’t Practice](https://youtu.be/fFKizS5oxrw)
 
@@ -27,7 +27,7 @@ want to learn not the whole project
 - encapsulation
 - data hiding
 - overriding
-- abstraction 
+- abstraction
 
 ## learn data structures
 
@@ -42,7 +42,7 @@ want to learn not the whole project
 ## learn databases
 
 - learn the fundamentals of databases and take a look at the file structure
-- 
+-
 
 ## be consistent
 
@@ -50,16 +50,15 @@ want to learn not the whole project
 
 ## engage with people, be part of a community and make connections
 
-
 ## find a mentor
 
 - mentor === growth
 - a good mentor will have the greatest impact on your growth as a software engineer
-- 
+-
 
 ## have fun with coding
 
-## code every day 
+## code every day
 
 ## there is no such thing as best field
 
@@ -67,23 +66,27 @@ want to learn not the whole project
 
 ## explaining is how to measure your understanding
 
-## enjoy the journey 
+## break complex problems into small pieces
+
+## enjoy the journey
 
 ## keep it simple
-write simple code
+
+Write simple code
 
 ## document it
-document your projects
+
+Document your projects
 
 ## focus on work-life balance
 
 ## understand the business
 
-## build side projects 
+## build side projects
 
 ## don't switch companies a lot
 
-## listen to understand no to argue 
+## listen to understand no to argue
 
 ## don't underestimate tasks
 
@@ -114,7 +117,7 @@ document your projects
 
 - learn about flow state and how it can effect developer productivity
 - focus!
-- 
+-
 
 ## have a defined style and system on how you code and support it with evidences
 
@@ -122,12 +125,30 @@ document your projects
 - make art
 - think about you system and develop it
 
+## learn from other programmers
+
+- read other's code and try to understand it
+- ask them for help, advice and tips
+- seek information
+
+## my favourite
+
+- when you solve a problem or build a project search for how other programmer has built the same thing and learn from them
+
+## learn debugging and using debuggers
+
+Read line by line and try to identify what is happening in this line
+
 ## the more the merrier
 
 - coding is much more fun when you have company
 - don't be afraid to be exposed and be known as the dumbest person on the planet
 - seize every opportunity to learn and grow
 - ditch that dreaded `imposter syndrome`
+
+## be lazy
+
+If something will happen more than once automate it
 
 ## find unicorns
 
@@ -146,9 +167,20 @@ document your projects
 
 ## take breaks
 
-- your health is just more important 
+- your health is just more important
+
+## learn these skills
+
+- cloud computing (AWS)
+- git & githbub
+- databases
+- linux(file system, system processes)
+- containers (docker)
+- API
+- pipelines (github action, circle ci)
 
 ## software/solutions architecture
+
 ### Infrastructure
 
 - operating systems
@@ -159,6 +191,7 @@ document your projects
 ### Web application servers
 
 ### Browser behaviour
+
 - cookies
 - local storage
 - session storage
@@ -179,9 +212,9 @@ document your projects
 - separate the logic from the code => think twice, code once
   - focus on the logic first
   - focus on the code next
-- 
-
+-
 
 ## resources
+
 - [The SECRETS to becoming a GREAT software engineer](https://youtu.be/Czg8C3wEpME?si=iYZ7A9MmeirGuveM)
 - [My Top 10 Tips For Computer Science Students](https://youtu.be/EEFd5tcYg88?si=5dlYnp-NaMkJMTe8)

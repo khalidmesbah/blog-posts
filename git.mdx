@@ -122,9 +122,9 @@ because it
 
 ## git workflow
 
-<Video id="dVil8e0yptQ" className="w-[400px] h-[400px]">
-<Video id="rFtUkk-sCqw" className="w-[400px] h-[400px]">
-<CustomImage id="14CP7U1VRaAhraTGEr4h2GQfyT7JsDGcu" alt="git-workflow">
+<Video id="dVil8e0yptQ" className="w-[400px] h-[400px]" />
+<Video id="rFtUkk-sCqw" className="w-[400px] h-[400px]" />
+<CustomImage id="14CP7U1VRaAhraTGEr4h2GQfyT7JsDGcu" alt="git-workflow" />
 
 ## `.git`
 
@@ -208,10 +208,12 @@ branches let us work in isolation from the rest of the project
 - `git -b checkout <branch-name>` switch to a branch and create it if not exists
 - `git switch <branch-name>` switch the between branches
 - `git log --oneline --decorate --graph --all` Running this command will show all branches and commits in the repository:
+- `git push origin --delete <branch-name>` delete a branch in a remote repository
 
 ## merging
 
 - one a merge happens it makes a commit and the merge commit will happen on the head branch
+- integrating changes from another branches into your current local head branch
 - making a merge makes a commit
 - When a merge happens, Git will:
   - look at the branches that it's going to merge
@@ -269,7 +271,7 @@ branches let us work in isolation from the rest of the project
 - `git reset --hard HEAD^` : undo the merge
 - git doesn't allow you to rename a remote repo
 - it's not possible to create a new branch in a remote repository, but we can publish an existing local branch on a remote repo
-- k
+-
 
 ## Resources
 
