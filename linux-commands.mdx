@@ -1,0 +1,37 @@
+---
+type: notes
+title: how
+description: useful linux commands
+tags:
+  - linux
+lastmod: 2023-10-12
+---
+
+## Piping / chaining
+
+`ls | cat` allowing the standard output from the `ls` command to be the standard input for the `cat` command
+e.g: `cat contacts.txt | sort | uniq | grep something`
+
+## running multiple commands at once
+
+1. using `;` run both commands
+2. using `&&` run the second command if the first succeeds
+3. using `||` run the second command if the first fails
+
+e.g: `mkdir hi && cd hi`
+
+## the find command
+
+`find <locationToSearch> `
+
+## redirection
+
+Redirecting the output into a file
+
+`echo hi > hi.txt` overwrite redirection
+`echo hi >> hi.txt` append redirection
+e.g: `sort < contacts.txt > sorted-contacts.txt`
+
+## sudo
+
+`sudo !!` Run `sudo` to the previous command

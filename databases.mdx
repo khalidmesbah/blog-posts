@@ -92,9 +92,31 @@ Partially structured or un-structured data: really big collections of complex da
 - the architecture or structure of a relational database, a statement of its tables and their columns
 - Database Schema - The high level structure of a database, you can think of it as the general blueprint of a database with information about what tables it holds and what columns exist on those tables
 
+## Where Databases Run
+
+- You can run a database on your computer and connect to it locally kind of like localhost.
+- You can run a database on your own computer in a container system like Docker.
+- Container systems are also common remotely, for instance in the Udacity workspace, you are connecting to a database running in a virtual machine.
+- Services like AWS and Azure provide databases in the cloud.
+
+## what are migrations
+
+- Migrations are a record of a change made to the schema of a database, with documented instructions to implement and rollback that change
+- Migrations are documents outlining the changes made on a database overtime
+- Migrations are only for tracking changes to the database schema `nevert to individual rows in a table`
+- Migrations are records of changes made to the database schema
+- Migrations contain instructions for hot to enact and rollback a specific change to the database
+- Using migrations to manage database schema changes in a project makes it easier to keep databases across various environments synced together
+
+## Models
+
+- Tables hold a list of items that share properties (columns), models are a class in our code that can be used as a template to create items that are stored as rows in the table.
+- each instance of the model will be a row in the database
+- The model is represented as a class, each book row in the database will be an instance of the book model.
+
 ## resources
 
 ## notes
 
 - Structure of a relational database table is like a spreadsheet with columns
--
+- database tables are always plural and model names are singular
