@@ -169,6 +169,13 @@ If something will happen more than once automate it
 
 - your health is just more important
 
+## impact
+
+Understand what impact is and always aim to make exceptional impact
+
+- identify areas for impact
+- measure the impact you make
+
 ## learn these skills
 
 - cloud computing (AWS)
@@ -218,3 +225,4 @@ If something will happen more than once automate it
 
 - [The SECRETS to becoming a GREAT software engineer](https://youtu.be/Czg8C3wEpME?si=iYZ7A9MmeirGuveM)
 - [My Top 10 Tips For Computer Science Students](https://youtu.be/EEFd5tcYg88?si=5dlYnp-NaMkJMTe8)
+- [](https://youtu.be/dfo9zq_5l-Y?si=ihVbrTu_5HLxj1gn)

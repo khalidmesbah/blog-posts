@@ -1,0 +1,44 @@
+---
+type: notes
+title: CORS Error
+description:
+tags:
+  - http
+  - networks
+lastmod: 2023-10-19
+---
+
+## Why
+
+- to keep the website secure
+- adding CORS is super important if you plan to make your API publicly accessible
+- you don't need it if your front-end and back-end are going to have the same domain
+- CORS is now used by all major browsers
+- if we want a client-side application from another domain to be able to consume the API we're building
+- CORS support is pretty much required in order to be useful to modern web applications, but you still see this problem around on older APIs from time to time.
+
+## what
+
+- CORS stands for Cross Origin Resource Sharing
+- it is an important factor in making and handling API requests
+- states that a browser can only make requests to an API if they share the same URL domain
+- if they don't share a domain, the client-side domain must be white-listed by CORS in the API in order to have access
+
+## how do you know the API doesn't support CORS?
+
+1. If you are making a normal fetch request to an endpoint the API says it supplies, but are getting an HTTP error similar to this one: `Reason: Did not find method in CORS header ‘Access-Control-Allow-Methods’`
+2. read the documentation of the API
+3. another quick trick is to open Postman or another endpoint testing tool and try the exact same request there. Postman is not a browser and does not require CORS support, so if your request works from Postman but not from the browser, it is pretty much confirmed that your issue is that the API doesn't support CORS.
+4.
+
+## what if the API i want doesn't support CORS
+
+When selecting APIs for your project, you should definietly look for which ones are CORS enabled. But, if you really must use one that isn't -- don't panic -- it is still possible. The issue is that CORS support is required by browsers. So the solution is to not make the request from the front end. Your back end will have to make the request to the API. So you can make a custom endpoint in your API that IS accessible from your front end, and that API endpoint will trigger a request to the actual API you want to use. Once it gets a response from that API, your back end will just pass that information to the frontend. It is more complicated than it should be, but its a 'best of a bad situation' solution.
+
+## when do you not need it
+
+- you don't need it if your front-end and back-end are going to have the same domain
+
+## notes
+
+- We can use CORS as a middleware on a route by route basis
