@@ -1,0 +1,53 @@
+## rendering
+
+- rendering is converting the code you write to html
+- rendering can take place on the server or on the client
+- it can happen
+  - ahead of time at build time
+  - on every request at runtime.
+-
+
+## Next.js rendering methods
+
+- SSR: Server-Side Rendering
+- SSG: Static Site Generation
+- CSR: Client-Side Rendering
+
+## What is Client-Side Rendering
+
+- the initial rendering work happens on the user's device.
+- the browser receives an empty HTML shell from the server along with the JavaScript instructions to construct the UI.
+
+## What is Pre-Rendering
+
+- Server-Side Rendering and Static Site Generation
+- Pre-rendering means the HTML is generated in advance, on a server, instead of having it all done by JavaScript on the user's device.
+
+## What is Server-Side Rendering
+
+- the HTML page is generated on a server at request time
+- The generated HTML, JSON data, and JavaScript instructions to make the page interactive are then sent to the client.
+- generated at request time
+
+## What is hydration
+
+With server-side rendering, the HTML of the page is generated on a server for each request. The generated HTML, JSON data, and JavaScript instructions to make the page interactive are then sent to the client.
+
+On the client, the HTML is used to show a fast non-interactive page, while React uses the JSON data and JavaScript instructions to make components interactive (for example, attaching event handlers to a button). This process is called hydration.
+
+## What is Static Site Generation
+
+- the HTML page is generated once on the server at build time
+- generated at build time
+
+## What is Incremental Static Regeneration
+
+- You can use Incremental Static Regeneration to create or update static pages after you’ve built your site. This means you do not have to rebuild your entire site if your data changes.
+
+## Why Server-Side Rendering and Static Site Generation are referred to as Pre-Rendering
+
+Because the fetching of external data and transformation of React components into HTML happens before the result is sent to the client.
+
+## What happens in a standard react application
+
+The browser receives an empty HTML shell from the server along with the JavaScript instructions to construct the UI.

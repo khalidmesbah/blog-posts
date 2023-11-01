@@ -230,11 +230,29 @@ branches let us work in isolation from the rest of the project
 - regular merge
 - fast-forword merge
 
+## revert a commit
+
+- `git revert` command is used to reverse a previously made commit:
+- will undo the changes that were made by the provided commit
+- creates a new commit to record the change
+
+## reset a commit
+
+## Questions
+
+- what is a clean repository
+  If your Working Directory is clean then there aren't any uncommitted changes in the repository
+
 ## notes
 
 - `git init`: git is a command and init is a sub command
 - `mkdir -p udacity-git-course/new-git-project && cd $_`: the `$_` part is sneaky
 - `git log -p` === `git show`
+
+```js
+if (a === 2) console.log("Hi");
+```
+
 - `git init`: convert a directory into a git repository
 - If you've already run git init before it's ok – running git init multiple times doesn't cause any problems since it just re-initializes the Git directory.
 - for Git to track a file, it needs to be committed to the repository
@@ -271,7 +289,8 @@ branches let us work in isolation from the rest of the project
 - `git reset --hard HEAD^` : undo the merge
 - git doesn't allow you to rename a remote repo
 - it's not possible to create a new branch in a remote repository, but we can publish an existing local branch on a remote repo
--
+- `git commit --amend` alter the most recent commit (change the message, include files (or changes to files) you might've forgotten to include)
+- Git does keep track of everything for about 30 days before it completely erases anything
 
 ## Resources
 

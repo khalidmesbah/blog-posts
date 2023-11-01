@@ -74,6 +74,10 @@ lastmod: 2023-08-28
 
 Write simple code
 
+## read the documentation of the things you use
+
+## be active on twitter
+
 ## document it
 
 Document your projects
@@ -103,6 +107,8 @@ Document your projects
 
 - favor projects over learning other programming languages
 
+## don't memorize the rarely used things
+
 ## version control every thing
 
 - mastering git is not optional
@@ -118,6 +124,12 @@ Document your projects
 - learn about flow state and how it can effect developer productivity
 - focus!
 -
+
+## build a portfolio website
+
+## learn basic design
+
+## lesser pay and good job is better than higher pay but a worse job
 
 ## have a defined style and system on how you code and support it with evidences
 
@@ -204,12 +216,21 @@ Understand what impact is and always aim to make exceptional impact
 - session storage
 - http
 
+## emerge yourself in the AI ecosystem
+
+- build technology around AI
+- dealing with LLMs
+- deep learning
+- use AI in all aspects of life
+
+## Specialize
+
 ## Tips
 
 - keep your resume updated
 - prioritize programming basics (DSA)
 - create a personal website
-- create a linkedin account
+- create a LinkedIn account
 - apply for internships as early as possible
 - attend hackathons
 - join a research lab
@@ -219,10 +240,13 @@ Understand what impact is and always aim to make exceptional impact
 - separate the logic from the code => think twice, code once
   - focus on the logic first
   - focus on the code next
--
+- code always don't watch only tutorial
+- emerge in a community
 
 ## resources
 
 - [The SECRETS to becoming a GREAT software engineer](https://youtu.be/Czg8C3wEpME?si=iYZ7A9MmeirGuveM)
 - [My Top 10 Tips For Computer Science Students](https://youtu.be/EEFd5tcYg88?si=5dlYnp-NaMkJMTe8)
-- [](https://youtu.be/dfo9zq_5l-Y?si=ihVbrTu_5HLxj1gn)
+- [THINGS that can RUIN your software engineering CAREER](https://youtu.be/dfo9zq_5l-Y?si=ihVbrTu_5HLxj1gn)
+- [Jumpstart Your Developer Journey](https://youtu.be/fTzsCwbc-j4?si=bPu7Ta4gq6CwIphw)
+- [37 Tips for Jr. Software Developers] (https://youtu.be/jZ_BzV0DA58?si=vKwCS5cy8c6jUjgu)
