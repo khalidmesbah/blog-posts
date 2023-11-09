@@ -177,9 +177,17 @@ If something will happen more than once automate it
 - invest on things that yields the biggest impacts
 - focus on learning deliberately not habitually
 
+## collaborate
+
+Helps you learn more
+
 ## take breaks
 
 - your health is just more important
+
+## master things that lasts
+
+Instead of mastering a random library or framework, you should master the fundamentals and the that lasts and don't often change
 
 ## impact
 
@@ -243,10 +251,12 @@ Understand what impact is and always aim to make exceptional impact
 - code always don't watch only tutorial
 - emerge in a community
 
-## resources
+## References
 
 - [The SECRETS to becoming a GREAT software engineer](https://youtu.be/Czg8C3wEpME?si=iYZ7A9MmeirGuveM)
 - [My Top 10 Tips For Computer Science Students](https://youtu.be/EEFd5tcYg88?si=5dlYnp-NaMkJMTe8)
 - [THINGS that can RUIN your software engineering CAREER](https://youtu.be/dfo9zq_5l-Y?si=ihVbrTu_5HLxj1gn)
 - [Jumpstart Your Developer Journey](https://youtu.be/fTzsCwbc-j4?si=bPu7Ta4gq6CwIphw)
-- [37 Tips for Jr. Software Developers] (https://youtu.be/jZ_BzV0DA58?si=vKwCS5cy8c6jUjgu)
+- [37 Tips for Jr. Software Developers](https://youtu.be/jZ_BzV0DA58?si=vKwCS5cy8c6jUjgu)
+- [My Top 6 Tips for Becoming a Better Web Developer](https://youtu.be/q-MLXYpkyqg?si=pMPziL2en1RVYZHh)
+- [How to get into software](https://github.com/npmaile/blog/blob/main/posts/2.%20How%20to%20get%20into%20software.md)

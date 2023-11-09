@@ -12,21 +12,92 @@ lastmod: 2023-10-19
 
 It is an application protocol for distributed, collaborative, hypermedia information systems.
 
+- responsible for communication between web servers and clients
+
 ## HTTP request methods
 
 HTTP defines a set of request methods (HTTP verbs) to indicate the desired action to be performed for a given resource.
 
 Each of them implements a different semantic, but some common features are shared by a group of them: e.g. a request method can be safe, idempotent, or cacheable.
 
-- `GET` The GET method requests a representation of the specified resource. Requests using GET should only retrieve data.
-- `HEAD` The HEAD method asks for a response identical to a GET request, but without the response body.
-- `POST` The POST method submits an entity to the specified resource, often causing a change in state or side effects on the server.
-- `PUT` The PUT method replaces all current representations of the target resource with the request payload.
-- `DELETE` The DELETE method deletes the specified resource.
+- `GET`
+  - retrieves data from the server
+  - The GET method requests a representation of the specified resource. Requests using GET should only retrieve data.
+- `POST`
+  - submits data to the server
+  - The POST method submits an entity to the specified resource, often causing a change in state or side effects on the server.
+- `PUT`
+  - update data already on the server
+  - The PUT method replaces all current representations of the target resource with the request payload.
+- `DELETE`
+  - delete data from the server
+  - The DELETE method deletes the specified resource.
 - `CONNECT` The CONNECT method establishes a tunnel to the server identified by the target resource.
 - `OPTIONS` The OPTIONS method describes the communication options for the target resource.
 - `TRACE` The TRACE method performs a message loop-back test along the path to the target resource.
 - `PATCH` The PATCH method applies partial modifications to a resource.
+- `HEAD` The HEAD method asks for a response identical to a GET request, but without the response body.
+
+## HTTP header fields
+
+### General Header Fields:
+
+- Cache-Control
+- Connection
+- Date
+- Pragma
+- Trailer
+- Transfer-Encoding
+- Upgrade
+- Via
+
+### Response-Specific Header Fields:
+
+- Accept-Ranges
+- Age
+- Content-Encoding
+- Content-Language
+- Content-Length
+- Content-Location
+- Content-Type
+- Expires
+- Last-Modified
+- Server
+- Set-Cookie
+
+### Request-Specific Header Fields:
+
+- Accept
+- Accept-Encoding
+- Accept-Language
+- Authorization
+- Content-Length
+- Content-Type
+- Cookie
+- Host
+- Referer
+- User-Agent
+
+## HTTP status code
+
+### General
+
+- 1xx: informational
+- 2xx: success
+- 3xx: redirect
+- 4xx: client error
+- 5xx: server error
+
+### Most popular
+
+- 200: ok
+- 201: ok created
+- 301: moved to new url
+- 304: not modified (cached version)
+- 400: bad request
+- 401: unauthorized
+- 404: not found
+- 500: internal server error
 
 ## RESTful APIs Routes
 
@@ -44,3 +115,9 @@ Each of them implements a different semantic, but some common features are share
 ## Why REST is useful
 
 For providing a predictable, industry standard, well-organized way to structure API endpoints.
+
+## Notes
+
+- every request is independent
+- http is stateless
+- each request consist of a header and a body

@@ -1,0 +1,56 @@
+---
+type: notes
+title: neovim
+description: the best code editor
+tags:
+  - vim
+  - linux
+  - code
+lastmod: 2023-11-03
+---
+
+## Buffers, Windows, Tabs in Neovim
+
+In Neovim, buffers, windows, and tabs are fundamental concepts that allow you to work with multiple files and navigate through your editing sessions more efficiently.
+
+## Buffers
+
+A buffer in Neovim represents the content of a file loaded into memory. When you open a file, Neovim creates a buffer to hold its contents. Buffers can be modified, saved to disk, and closed. You can have multiple buffers open simultaneously, each associated with a different file or an empty buffer.
+
+To work with buffers, you can use various commands and keybindings. For example:
+
+```sh
+:e <file> // Open a file in a new buffer.
+:bnext // Switch to the next buffer.
+:bprevious // Switch to the previous buffer.
+:ls or :buffers // List all open buffers.
+:bd or :bdelete // Close the current buffer.
+```
+
+## Windows
+
+A window in Neovim represents a rectangular view on a buffer. You can think of a window as a viewport into a buffer. Neovim allows you to split windows both horizontally and vertically, allowing you to see and work with multiple buffers simultaneously.
+
+To work with windows, you can use various commands and keybindings. For example:
+
+```sh
+<Ctrl-w>s or :split // Split the current window horizontally.
+<Ctrl-w>v or :vsplit // Split the current window vertically.
+<Ctrl-w>w or <Ctrl-w><Ctrl-w> // Cycle between windows.
+<Ctrl-w>c or :close // Close the current window.
+```
+
+## Tabs
+
+Neovim also provides tabs as a way to organize your editing sessions. A tab is a collection of one or more windows, each displaying a different buffer. Tabs allow you to switch between different sets of windows and buffers, providing a higher level of organization.
+
+To work with tabs, you can use various commands and keybindings. For example:
+
+```sh
+:tabnew or :tabnew <file> // Open a new tab.
+gt or :tabnext // Move to the next tab.
+gT or :tabprevious // Move to the previous tab.
+:tabclose or :tabclose! // Close the current tab.
+```
+
+These concepts provide flexible ways to navigate and manipulate files in Neovim, allowing you to work efficiently with multiple buffers, windows, and tabs. You can explore more advanced features and customization options in the Neovim documentation.
