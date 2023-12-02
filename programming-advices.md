@@ -151,6 +151,15 @@ Document your projects
 
 Read line by line and try to identify what is happening in this line
 
+- isolate the problem to the smallest area of code
+- reduce the amount of possible things that could be impacting your program
+- disable as many things as possible in the code so you can narrow down where exactly you're running into a specific issue.
+- eliminate the things that are not possible to be the cause of the problem
+- go through all the different things that could be causing the problem, check them off one by one, and isolate it to the smallest are, then go through the code line by line
+- cross of as many areas as you can, isolate and get into the smallest part
+- learn how to use a debugger
+- use a rubber duck
+
 ## the more the merrier
 
 - coding is much more fun when you have company

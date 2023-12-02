@@ -1,0 +1,54 @@
+---
+type: snippet
+title: make sure you use if then else of if and return
+description: if only is a mistake
+tags:
+  - JavaScript
+  - Node
+lastmod: 2023-07-15
+---
+
+if we want to check if the condition is true, we will print true, and is the condition is false we will print false
+
+then take of the following two mistakes
+
+the wrong way
+
+```js
+const check = (condition) => {
+  if (condition) console.log("true");
+  console.log("false");
+  return condition;
+};
+check(true);
+// output
+true;
+false;
+```
+
+a correct way
+
+```js
+const check = (condition) => {
+  if (condition) console.log("true");
+  else console.log("false");
+  return condition;
+};
+check(true);
+// output
+true;
+```
+
+```js
+const check = (condition) => {
+  if (condition) {
+    console.log("true");
+    return condition;
+  }
+  console.log("false");
+  return condition;
+};
+check(true);
+// output
+true;
+```

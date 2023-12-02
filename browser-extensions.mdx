@@ -40,7 +40,7 @@ An extension is basically just a web page that is hosted within Chrome and can a
 
 - Chrome extensions can also be created to work only on certain pages through the use of Page Actions,
 
-- Chrome extensions can also be created to work only on certain pages through the use of Page Actions, they can run code in the background using Background Pages, and they can even modify an existing page loaded in the browser using Content Scripts. 
+- Chrome extensions can also be created to work only on certain pages through the use of Page Actions, they can run code in the background using Background Pages, and they can even modify an existing page loaded in the browser using Content Scripts.
 
 - Due to security constraints, we can’t put inline JavaScript into our HTML files inside of our Chrome extensions, so we have to create a separate file to hold any JavaScript code we need and we’ll reference it from the HTML file.
 
@@ -53,10 +53,12 @@ A browser action is relevant no matter where you are in the browser.
 ## How to create a Chrome extension
 
 ### `manifest.json`
+
 All Chrome extensions require a manifest file.
 The Manifest file tells Chrome everything it needs to know to properly load up the extension in Chrome.
 
 ## Service Workers
+
 - service workers: a JavaScript file that runs separatly from the main browser thread
 - service workers will not have access to a webpage, since it's separate from main processes
 - service workers have the capibality to communicate to your extension using the extension managing system
@@ -64,8 +66,6 @@ The Manifest file tells Chrome everything it needs to know to properly load up t
 ## Content Scripts
 
 files that run in the context of the webpages we're on
-
-
 
 ## 2
 
