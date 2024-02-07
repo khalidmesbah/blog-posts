@@ -1,0 +1,50 @@
+---
+type: notes
+title: supabase
+description: my notes about supabase
+tags:
+  - auth
+  - postgres
+  - database
+lastmod: 2024-02-07
+---
+
+- Each policy is attached to a table, and the policy is executed every time a table is accessed.
+- Policies are Postgres's rule engine.
+- Policies are simply SQL logic that you attach to a Postgres table.
+- SELECT policies: You can specify select policies with the using clause.
+- INSERT policies:You can specify insert policies with the with check clause, The with check expression ensures that any new row data adheres to the policy constraints.
+- UPDATE policies: You can specify update policies by combining both the using and with check expressions, The using clause represents the condition that must be true for the update to be allowed, and with check clause ensures that the updates made adhere to the policy constraints.
+- DELETE policies: You can specify delete policies with the using clause.
+- Policies are "implicit where clauses"
+- running select statements without any filters is a bad pattern for performance.
+- Postgres Roles are mostly for configuring system access to your database.
+- Row Level Security is for configuring application access
+- Postgres manages database access permissions using the concept of roles.
+- Roles and users are essentially the same in Postgres, however if you want to use password-logins for a specific role, then you can use `WITH LOGIN PASSWORD`
+- Your Postgres database is the core of your Supabase project, so it's important that every role has a strong, secure password at all times.
+- permissions that can be granted to users and roles.
+- Supabase Auth categorizes requests into two roles: anon for anonymous users and authenticated for logged-in users.
+- authenticated and anon roles are pivotal in defining Row Level Security (RLS) policies.
+- Anonymous (anon) Role: This role is assigned to users who have not logged in. It has limited privileges, which can be defined in RLS policies to control access to data.
+- Authenticated Role: Once a user logs in, their role switches from anon to authenticated, granting them more access as defined by the RLS policies.
+- It is recommended to specify roles within your policies using the TO clause to improve efficiency, For instance, a policy that is intended only for authenticated users should explicitly state so, preventing unnecessary policy checks for anonymous users.
+- API keys are JWTs mapping to PostgreSQL roles.
+- Always enable RLS on sensitive tables.
+- Use role hierarchies to simplify permission management.
+- Regularly review and update access policies to ensure they align with your security requirements.
+- Use role hierarchies to simplify permission management.
+- Regularly review and update access policies to ensure they align with your security requirements.
+- Policy Creation: Policies are SQL statements that define access rules. They can be as simple or complex as needed, catering to specific business logic.
+- Supabase Authentication Roles: Supabase uses PostgreSQL roles, such as anon for anonymous users and authenticated for logged-in users, to simplify policy definitions.
+- Using Helper Functions: Supabase provides helper functions like auth.uid() to reference the authenticated user's ID in policies.
+- Enable RLS: Always enable RLS on tables to prevent unauthorized access.
+- Distinct Policies: Create separate policies for different operations (SELECT, INSERT, UPDATE, DELETE) to maintain clarity and control.
+- Avoid Service Keys on Client: Service keys bypass RLS and should only be used for administrative tasks.
+- RLS allows for precise control over who can see or modify data, down to individual rows.
+- RLS acts as an additional layer of security, complementing application-level checks.
+- By leveraging RLS and Supabase roles, developers can ensure that their application's data access patterns are secure, efficient, and aligned with their security policies.
+- it's essential to understand the default roles provided by Supabase, such as authenticated for logged-in users and anon for anonymous access, When connecting directly to your Supabase database, you can map these roles to corresponding users in an external database using Postgres Foreign Data Wrappers (FDWs). For instance, to map the authenticated role to a postgres user in an external database, you would create a foreign server and user mapping within your Supabase database. This allows you to maintain a seamless authentication flow while leveraging the robustness of direct Postgres connections.
+- PostgreSQL provides a set of predefined roles that provide access to certain, commonly needed, privileged capabilities and information.
+- Administrators (including roles that have the CREATEROLE privilege) can GRANT these roles to users and/or other roles in their environment, providing those users with access to the specified capabilities and information.
+-
