@@ -7,6 +7,7 @@ tags:
   - advices
   - programming
 lastmod: 2023-08-28
+published: true
 ---
 
 ## learn to read code

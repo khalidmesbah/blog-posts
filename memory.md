@@ -5,9 +5,10 @@ description: how memory works
 tags:
   - fundamentals
 lastmod: 2023-09-02
+published: true
 ---
 
-## whats
+## what's
 
 - memory: an array of bytes within RAM
 - memory block: a single unit (byte) within memory, used to hold some value

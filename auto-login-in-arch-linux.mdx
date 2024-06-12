@@ -7,6 +7,7 @@ tags:
   - linux
   - automation
 lastmod: 2023-08-21
+published: true
 ---
 
 ## open the following file 
@@ -19,5 +20,5 @@ sudo vim /etc/systemd/system/getty.target.wants/getty@tty1.service
 ExecStart=-/sbin/agetty -a {username} - $TERM
 ```
 
-> please make sure you don't miss spell a word nor delete or add a character, beacuse my system tottaly crashed when i added an extra dash before the username and i had to use chroot ot change the root directory and fix the problem
+> please make sure you don't miss spell a word nor delete or add a character, because my system tottaly crashed when i added an extra dash before the username and i had to use chroot ot change the root directory and fix the problem
 > `ExecStart=-/sbin/agetty -a - {username} - $TERM` => this line broke my system

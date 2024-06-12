@@ -7,6 +7,7 @@ tags:
   - arch
   - yay
 lastmod: 2023-09-26
+published: true
 ---
 
 ## what is pacman

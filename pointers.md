@@ -6,6 +6,7 @@ tags:
   - fundamentals
   - c/cpp
 lastmod: 2023-09-02
+published: true
 ---
 
 ## what is a pointer
