@@ -58,7 +58,7 @@ sudo vim /etc/pacman.conf
 
 is use those configurations
 
-```txt
+```md
 # Misc options
 #UseSyslog
 Color
