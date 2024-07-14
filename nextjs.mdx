@@ -1,0 +1,79 @@
+---
+type: notes
+title: Next.js
+description: A React framework for building full-stack web applications.
+tags:
+  - frontend
+lastmod: 2024-07-02
+published: true
+---
+
+## Introduction
+
+- Next.js is a **React framework** for building full-stack web applications.
+- You use `React Components` to **build user interfaces**, and `Next.js` for **additional features and optimizations**.
+- Next.js also abstracts and automatically configures tooling needed for React, like bundling, compiling, and more.
+- This allows you to focus on building your application instead of spending time with configuration.
+- Some of the main Next.js features include: Routing, Rendering, Data Fetching, Styling, Optimizations, TypeScript.
+- Next.js uses file-system routing, which means the routes in your application are determined by how you structure your files.
+- If you forget to create layout.tsx, Next.js will automatically create this file when running the development server with next dev.
+- The project structure of a Next.js application consists of top-level files and folders, configuration files, and routing conventions.
+- Top-level folders are used to organize your application's code and static assets.
+  - `app/`: App Router
+  - `pages/`: Pages Router
+  - `public/`: Static assets to be served
+  - `src/`: Optional application source folder
+- Top-level files are used to configure your application, manage dependencies, run middleware, integrate monitoring tools, and define environment variables.
+  - `next.config.js`: Configuration file for Next.js
+  - `package.json`: Project dependencies and scripts
+  - `instrumentation.ts`: OpenTelemetry and Instrumentation file
+  - `middleware.ts`: Next.js request middleware
+  - `.env`: Environment variables
+  - `.env.local`: Local environment variables
+  - `.env.production`: Production environment variables
+  - `.env.development`: Development environment variables
+  - `.eslintrc.json`: Configuration file for ESLint
+  - `.gitignore`: Git files and folders to ignore
+  - `next-env.d.ts`: TypeScript declaration file for Next.js
+  - `tsconfig.json`: Configuration file for TypeScript
+  - `jsconfig.json`: Configuration file for JavaScript
+- The Next.js App Router introduces a new model for building applications using React's latest features such as Server Components, Streaming with Suspense, and Server Actions.
+- You intentionally cannot access the raw request object. However, you can access headers and cookies through server-only functions. You can also set cookies.
+- Layouts do not rerender.
+- Layouts can be cached and reused to avoid unnecessary computation when navigating between pages.
+- By restricting layouts from accessing the raw request, Next.js can prevent the execution of potentially slow or expensive user code within the layout, which could negatively impact performance.
+- The layouts design enforces consistent and predictable behavior for layouts across different pages, which simplifies development and debugging.
+- Depending on the UI pattern you're building, Parallel Routes allow you to render multiple pages in the same layout, and pages have access to the route segments as well as the URL search params.
+- By default, pages are Server Components.
+- You can redirect from a server component
+- You can set cookies in Server Actions or Route Handlers using the cookies function.
+- You can also set cookies from Middleware.
+- Since HTTP does not allow setting cookies after streaming starts, you cannot set cookies from a page or layout directly.
+-
+
+## App Routing Conventions
+>
+> The following file conventions are used to define routes and handle metadata in the app router.
+
+- `layout.js/jsx/tsx`: Layout
+- `page.js/jsx/tsx`: Page
+- `loading.js/jsx/tsx`: Loading UI
+- `not-found.js/jsx/tsx`: Not found UI
+- `error.js/jsx/tsx`: Error UI
+- `global-error.js/jsx/tsx`: Global error UI
+- `route.js/ts`: API endpoint
+- `template.js/jsx/tsx`: Re-rendered layout
+- `default.js/jsx/tsx`: Parallel route fallback page
+
+### Nested Routes
+
+- `folder`: Route segment
+- `folder/folder`: Nested route segment
+
+### Dynamic Routes
+
+- `[folder]`: Dynamic route segment
+- `[...folder]`: Catch-all route segment
+- `[[...folder]]`: Optional catch-all route segment
+
+##

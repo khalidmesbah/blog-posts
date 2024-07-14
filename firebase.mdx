@@ -1,0 +1,56 @@
+---
+type: notes
+title: Firebase
+description: About Firebase
+tags:
+  - baas
+  - google
+lastmod: 2024-6-14
+published: true
+---
+
+## What is Firebase
+>
+> a suite of tools for building apps and managing infrastructure on top of google cloud platform
+> a complete BAAS
+
+1. Cloud Firestore
+2. Authentication
+3. Hosting
+4. Cloud functions
+5. Cloud messaging
+
+## Cloud Firestore
+
+- access data from multiple devices
+- store data in the cloud
+- sync the data across all the devices
+- share the data among multiple users
+- robust client libraries
+- support for offline mode
+- good security rules to manage access
+- easy to use data browsing tool
+- you can structure your own data
+- support for real time fetching of data or manually fetching of data
+- multiregional data application
+- strong consistency
+- multidocument transaction
+- integrates with other firebase products (cloud functions and authentication)
+-
+
+## Authentication
+
+- firebase support third-party providers
+-
+
+### The modes of the Cloud Firestore security rules
+
+- Test mode: Good for getting started with the mobile and web client libraries, but allows anyone to read and overwrite your data. After testing, make sure to review the Secure your data section.
+- Locked mode: Denies all reads and writes from mobile and web clients. Your authenticated application servers (C#, Go, Java, Node.js, PHP, Python, or Ruby) can still access your database.
+
+## Notes
+
+- Configure App Check to Protect your Cloud Firestore resources from abuse, such as billing fraud or phishing
+- Do not distribute or expose an app publicly without adding Security Rules for your database.
+- Firebase users have a fixed set of basic properties—a unique ID, a primary email address, a name and a photo URL—stored in the project's user database
+- User instances keep track of every provider linked to the user.
