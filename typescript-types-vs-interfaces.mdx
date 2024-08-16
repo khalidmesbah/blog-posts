@@ -1,0 +1,52 @@
+---
+type: listicle
+title: Typescript types vs interfaces
+description: which one to use
+tags:
+  - typescript
+lastmod: 2024-08-15
+published: true
+---
+
+#
+
+## What is a type?
+
+```ts
+type PersonT = {
+  name: string;
+  age: number;
+};
+```
+
+## What is an interface?
+
+```ts
+interface PersonI {
+  name: string;
+  age: number;
+}
+```
+
+# Types vs Interfaces
+
+- types are versatile which means that there are more ways to use them => (types++)
+- interfaces have one feature that types do not have => (interfaces++)
+- types are less complicated => (types++)
+  - interfaces are a tiny bit faster than types, in other words, they are faster to compile but the difference is negligible => (interfaces++)
+- types have more features => (types++)
+  - the ability to merge interfaces but not types => (interfaces++)
+- types can be used for everything without the need of interfaces (interfaces can only describe objects) => (types++)
+- interfaces have shorter and more focused error messages => (interfaces++)
+- types are easier to read and write (cleaner) => (types++)
+- the word `type` has 4 characters meanwhile `interface` has 9 => (types+=4)
+- using any of them is not a big of a deal they both works fine => (types++, interfaces++)
+
+## Conclusion
+
+In a nutshell, be consistent and always favor types over interfaces.
+
+Points:
+
+`Types` : 10
+`interfaces` : 5
