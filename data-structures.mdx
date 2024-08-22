@@ -45,17 +45,15 @@ a data structure can be defined as any of the following:-
 ### Types of data structures in terms of the ability to shrink and extend
 
 #### Static
->
+
 > allocate at compile time
->
 
 - fast at reading/accessing
 - slow at deleting and inserting
 
 #### Dynamic
->
+
 > allocate at run time
->
 
 - fast at deleting and inserting
 - slow at reading/accessing
@@ -136,9 +134,8 @@ the process of discovering the root causes of a problem in order to identify app
 ---
 
 ## What is Capacity trick
->
+
 > it is about being slow once in every too many steps instead of being slow in every step
->
 
 e.g: if we have reserved a vector with length 10 and it's filled then we will double the length and so on and so forth
 
@@ -147,14 +144,14 @@ e.g: if we have reserved a vector with length 10 and it's filled then we will do
 ## What are the different types of data types
 
 1. Primitive data type
-    e.g: float, int
+   e.g: float, int
 2. User-Defined data type
-    e.g: a vector we implemented
+   e.g: a vector we implemented
 3. Abstract data type
-    - a theoretical concept, more like logical/mathematical view by which we specify the what part and also potentially the expected performance
-    - we focus on the what
-    - we don't care about how(not specified yet)
-    - there's only one what but many hows
+   - a theoretical concept, more like logical/mathematical view by which we specify the what part and also potentially the expected performance
+   - we focus on the what
+   - we don't care about how(not specified yet)
+   - there's only one what but many hows
 
 ---
 
@@ -178,13 +175,13 @@ e.g: if we have reserved a vector with length 10 and it's filled then we will do
 - Abstraction provides a promise that any implementation of the ADT has certain properties and abilities; knowing these is all that is required to make use of an ADT object.
 
 - Encapsulation
-Abstraction provides a promise that any implementation of the ADT has certain properties and abilities; knowing these is all that is required to make use of an ADT object.
+  Abstraction provides a promise that any implementation of the ADT has certain properties and abilities; knowing these is all that is required to make use of an ADT object.
 
 - Localization of change
-Code that uses an ADT object will not need to be edited if the implementation of the ADT is changed. Since any changes to the implementation must still comply with the interface, and since code using an ADT object may only refer to properties and abilities specified in the interface, changes may be made to the implementation without requiring any changes in code where the ADT is used.
+  Code that uses an ADT object will not need to be edited if the implementation of the ADT is changed. Since any changes to the implementation must still comply with the interface, and since code using an ADT object may only refer to properties and abilities specified in the interface, changes may be made to the implementation without requiring any changes in code where the ADT is used.
 
 - Flexibility
-Different implementations of the ADT, having all the same properties and abilities, are equivalent and may be used somewhat interchangeably in code that uses the ADT. This gives a great deal of flexibility when using ADT objects in different situations. For example, different implementations of the ADT may be more efficient in different situations; it is possible to use each in the situation where they are preferable, thus increasing overall efficiency.
+  Different implementations of the ADT, having all the same properties and abilities, are equivalent and may be used somewhat interchangeably in code that uses the ADT. This gives a great deal of flexibility when using ADT objects in different situations. For example, different implementations of the ADT may be more efficient in different situations; it is possible to use each in the situation where they are preferable, thus increasing overall efficiency.
 
 ### Examples of ADTs
 
