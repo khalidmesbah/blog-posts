@@ -1,0 +1,257 @@
+---
+type: notes
+title: render-markdown.nvim
+description: Plugin to improve viewing Markdown files in Neovim
+tags:
+  - markdown
+  - nvim
+lastmod: 2024-09-11
+published: true
+---
+
+# Call outs
+
+> This is a note
+
+> [!TIP]
+> hello
+
+> [!NOTE]
+> hello
+
+> [!WARNING]
+> hello
+
+> [!IMPORTANT]
+> hello
+
+> [!CAUTION]
+> hello
+
+> [!ATTENTION]
+> hello
+
+> [!ERROR]
+> hello
+
+> [!QUESTION]
+> hello
+
+> [!EXAMPLE]
+> hello
+
+> [!Quote]
+> hello
+
+# Tables
+
+| Tables        |      Are      |  Cool |
+| ------------- | :-----------: | ----: |
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      |   centered    |   $12 |
+| zebra stripes |   are neat    |    $1 |
+
+# Code blocks
+
+```js
+const a = 1;
+```
+
+```js
+function add(a, b) {
+  return a + b;
+}
+```
+
+```js
+console.log("Hello, world!");
+```
+
+```js
+console.log("Hello, world!");
+```
+
+## Code blocks with syntax highlighting
+
+### JavaScript
+
+```js
+var add = function (a, b) {
+  return a + b;
+};
+
+console.log(add(1, 2));
+```
+
+### HTML
+
+```html
+<!doctype html>
+<html>
+  <head>
+    <title>Example</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+  </body>
+</html>
+```
+
+### CSS
+
+```css
+body {
+  background-color: #f0f0f0;
+}
+
+h1 {
+  color: red;
+}
+```
+
+### Java
+
+```java
+public class HelloWorld {
+  public static void main(String[] args) {
+    System.out.println("Hello, world!");
+  }
+}
+```
+
+### C++
+
+```cpp
+#include <iostream>
+
+int main() {
+  std::cout << "Hello, world!" << std::endl;
+  return 0;
+}
+```
+
+### Python
+
+```python
+print("Hello, world!")
+```
+
+### Ruby
+
+```ruby
+puts "Hello, world!"
+```
+
+### Go
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+  fmt.Println("Hello, world!")
+}
+```
+
+### PHP
+
+```php
+<?php
+echo "Hello, world!";
+?>
+```
+
+### C
+
+```c
+#include <stdio.h>
+
+int main() {
+  printf("Hello, world!");
+  return 0;
+}
+```
+
+# Lists
+
+- Unordered list
+- Unordered list
+  - Nested unordered list
+- Unordered list
+
+1. Ordered list
+2. Ordered list
+   1. Nested ordered list
+3. Ordered list
+
+- [ ] Task list
+- [x] Completed task
+
+# Links
+
+[I'm an inline-style link](https://www.google.com)
+
+[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+
+[I'm a reference-style link][arbitrary case-insensitive reference text]
+
+[I'm a relative reference to a repository file](../blob/master/LICENSE)
+
+[You can use numbers for reference-style link definitions][1]
+
+Or leave it empty and use the [link text itself].
+
+URLs and URLs in angle brackets will automatically get turned into links.
+http://www.example.com or <http://www.example.com> and sometimes
+example.com (but not on Github, for example).
+
+Some text to show that the reference links can follow later.
+
+[arbitrary case-insensitive reference text]: https://www.mozilla.org
+[1]: http://slashdot.org
+[link text itself]: http://www.reddit.com
+
+# Images
+
+Here's our logo (hover to see the title text):
+
+Inline-style:
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+Reference-style:
+![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+
+# Inline HTML
+
+<dl>
+  <dt>Definition list</dt>
+  <dd>Is something people use sometimes.</dd>
+
+  <dt>Markdown in HTML</dt>
+  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+</dl>
+
+# Line Breaks
+
+Here's a line for us to start with.
+
+This line is separated from the one above by two newlines, so it will be a _separate paragraph_.  
+This line is also a separate paragraph, but...  
+This line is only separated by a single newline, so it's a separate line in the _same paragraph_.
+
+---
+
+Here's a line for us to start with.  
+This line is separated from the one above by two newlines, so it will be a _separate paragraph_.  
+This line is also begins a separate paragraph, but...  
+This line is only separated by a single newline, so it's a separate line in the _same paragraph_.
+
+# Blockquotes
+
+> Blockquotes are very handy in email to emulate reply text.
+> This line is part of the same quote.
+
+Quote break

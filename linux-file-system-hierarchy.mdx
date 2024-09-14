@@ -1,30 +1,54 @@
 ---
 type: notes
-title: linux-file-system-hierarchy
-description: understanding the linux's file system hierarchy
+title: linux-file-system
+description: Linux Filesystem Hierarchy Standard Explained.
 tags:
   - linux
   - file system
-lastmod: 2023-08-14
+lastmod: 2024-09-14
 published: true
 ---
 
+## Introduction
+
+- Linux originally had no standard file system structure.
+- Understanding the Linux file system structure is crucial for navigation and control.
+- The Filesystem Hierarchy Standard (FHS) provides a consistent directory structure.
+- Linux distributions may add custom tweaks to the FHS.
+
+## Notes
+
+- usr stands for Unix System Resources, not user.
+- Use the PATH variable to specify default binaries.
+- The PATH variable can be reordered to specify default binaries.
+- Use LD_LIBRARY_PATH to tweak the library search order.
+- Keep user data in /home and admin data in /root.
+- /run is used by system services for ongoing communication.
+- Regularly inspect /var/log for hardware events and security issues.
+- /proc and /sys are useful for performance tuning and forensic triage.
+- /bin, /usr/bin, and /usr/local/bin serve as homes for different types of executables.
+- /lib and /usr/lib hold shared libraries essential for binary functionality.
+
 ## The hierarchy
 
-- /
-  - `bin` user binaries (executables: ls,mkdir)
-    - `user/bin` user binaries in modern linux systems
-  - `sbin` system binaries
-  - `etc` configuration files
-  - `dev` device files
-  - `proc` process information
-  - `var` variable files
-  - `tmp` temporary files
-  - `usr` user programs
-  - `home` home directories (can have multiple users)
-  - `boot` boot loader files
-  - `lib` system libraries
-  - `opt` optional applications
-  - `mnt` mount directory
-  - `media` removable devices
-  - `srv` service data
+- `/bin` contains core OS programs (base OS binaries) accessible before /usr mounts.
+- `/usr/bin` is the primary home for non-base OS binaries.
+- `/usr/local/bin` holds executables installed by admins from source.
+- `/sbin` directory house sysadmin utilities requiring root access.
+- `/lib` and `/usr/lib` contain shared library files for binaries.
+- `/lib` contains shared library files essential for /bin and /sbin binaries.
+- `/usr/lib` holds libraries for /usr binaries not critical for early system init.
+- `/etc` controls services with configuration files.
+- `/home` stores user data, while `/root` is exclusive to administrators.
+- `/var` stores fast-changing data like logs and caches.
+- `/run` contains volatile run-time info like systemd details.
+- `/proc` and `/sys` provide system observability and configuration.
+- `/proc` is oriented towards process/runtime statistics.
+- `/sys` provides component/hardware access for monitoring and config.
+- `dev` device files
+- `tmp` temporary files
+- `boot` boot loader files
+- `opt` optional applications
+- `mnt` mount directory
+- `media` removable devices
+- `srv` service data
