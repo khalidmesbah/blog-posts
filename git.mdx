@@ -6,7 +6,7 @@ tags:
   - git
   - version control
   - tool
-lastmod: 2023-09-01
+lastmod: 2024-09-15
 published: true
 ---
 
@@ -276,7 +276,6 @@ branches let us work in isolation from the rest of the project
 - `git checkout`: switch between different branches and tags
 - `git merge`: combines changes in different branches
 - `git tag -d v1.0`: delete a tag
-- ``:
 - CAREFUL: In the command above (git tag -a v1.0) the -a flag is used. This flag tells Git to create an annotated flag. If you don't provide the flag (i.e. git tag v1.0) then it'll create what's called a lightweight tag.
 - you should always use annotated tags.
 - tags are associated with a specific commit. This is why the tag is on the same line as the commit's SHA.
@@ -287,6 +286,7 @@ branches let us work in isolation from the rest of the project
 - it's not possible to create a new branch in a remote repository, but we can publish an existing local branch on a remote repo
 - `git commit --amend` alter the most recent commit (change the message, include files (or changes to files) you might've forgotten to include)
 - Git does keep track of everything for about 30 days before it completely erases anything
+- don't use `checkout` to switch branches but use `switch` instead
 
 ## Resources
 
