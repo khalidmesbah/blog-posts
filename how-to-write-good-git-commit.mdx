@@ -1,15 +1,13 @@
 ---
 type: article
-title: good git commit message
-description: how to write a good git commit message
+title: how to write good git commit message
+description: a guide to writing effective Git commit messages.
 tags:
   - soft skills
   - git
-lastmod: 2024-09-25
+lastmod: 2024-09-27
 published: true
 ---
-
-# How to write a good git commit message
 
 ## What is a git commit?
 
@@ -53,31 +51,16 @@ The basic idea of an atomic git commit is that it contains the shortest amount o
 
 > A specification for adding human and machine readable meaning to commit messages
 
+- The Conventional Commits specification is a lightweight convention on top of commit messages.
 - Conventional Commits specification provides easy rules for commit history.
 - Conventional Commits allows for easy understanding by humans and machines.
-- Conventional Commits enables generating change logs and semantic versioning.
 - Conventional Commits facilitates easier collaboration on projects.
 - Conventional Commits is used by many large open-source projects.
-- Automatically generating CHANGELOGs.
-- Automatically determining a semantic version bump (based on the types of commits landed).
 - Communicating the nature of changes to teammates, the public, and other stakeholders.
-- Triggering build and publish processes.
 - Making it easier for people to contribute to your projects, by allowing them to explore a more structured commit history.
-- use all lowercase
-- The commit type subject line should be all lowercase with a character limit to encourage succinct descriptions.
-  The commit type subject line should be all lowercase with a character limit to encourage succinct descriptions.
+- write all lowercase
 
-The optional commit body should be used to provide further detail that cannot fit within the character limitations of the subject line description.
-
-It is also a good location to utilize BREAKING CHANGE: `<description>` to note the reason for a breaking change within the commit.
-
-The footer is also optional. We use the footer to link the JIRA story that would be closed with these changes for example: Closes D2IQ-`<JIRA #>`.
-
-The Conventional Commits specification is a lightweight convention on top of commit messages.
-
-It provides an easy set of rules for creating an explicit commit history; which makes it easier to write automated tools on top of.
-
-This convention dovetails with `SemVer`, by describing the features, fixes, and breaking changes made in commit messages.
+## Structure of a good commit message
 
 The commit message should be structured as follows:
 
@@ -108,6 +91,8 @@ The type of the commit message can be one of the following:
 - `ci`: Changes to our CI configuration files and scripts (for example changing the version of Node
 - `ops`: Commits, that affect operational components like infrastructure, deployment, backup, recovery...
 
+And you can create your own type of commits.
+
 ### scope
 
 - The "scope" provides additional context and is enclosed in parentheses.
@@ -119,17 +104,16 @@ The type of the commit message can be one of the following:
 - The "description" is a short message describing the commit.
 - written in the imperative, present tense: “change” not “changed” nor “changes”
 - maximum 50 characters
--
 
 ### body
 
 - The optional commit body should be used to provide further detail that cannot fit within the character limitations of the subject line description.
-- The "body" provides detailed explanations of changes and reasons.
 - you can use bullet points to list out the changes
 
 ### footer
 
 - The "footer" references issue IDs or other metadata.
+- The footer is also optional. We use the footer to link the JIRA story that would be closed with these changes for example: Closes `D2IQ-<JIRA #>`.
 
 ## Examples of Good Commit Messages
 
@@ -161,14 +145,6 @@ chore: update npm dependency to latest version
 ```
 
 ```sh
-Fix bug preventing users from submitting the subscribe form
-```
-
-```sh
-Update incorrect client phone number within footer body per client request
-```
-
-```sh
 fix: fix foo to enable bar
 
 This fixes the broken behavior of the component by doing xyz.
@@ -181,7 +157,9 @@ Closes D2IQ-12345
 
 ## Conclusion
 
-Writing good commit messages is an extremely beneficial skill to develop, and it helps you communicate and collaborate with your team. Commits serve as an archive of changes. They can become an ancient manuscript to help us decipher the past, and make reasoned decisions in the future.
+Writing good commit messages is an extremely beneficial skill to develop, and it helps you communicate and collaborate with your team.
+
+Commits serve as an archive of changes. They can become an ancient manuscript to help us decipher the past, and make reasoned decisions in the future.
 
 There is an existing set of agreed-upon standards we can follow, but as long as your team agrees upon a convention that is descriptive with future readers in mind, there will undoubtedly be long-term benefits.
 
@@ -189,15 +167,15 @@ The most important part of a commit message is that it should be clear and meani
 
 ## Notes
 
-- Capitalization and Punctuation: Capitalize the first word and do not end in punctuation. If using Conventional Commits, remember to use all lowercase.
-- Mood: Use imperative mood in the subject line. Example – Add fix for dark mode toggle state.
-- Type of Commit: Specify the type of commit. It is recommended and can be even more beneficial to have a consistent set of words to describe your changes. Example: Bugfix, Update, Refactor, Bump, and so on. See the section on Conventional Commits below for additional information.
-- Length: The first line should ideally be no longer than 50 characters, and the body should be restricted to 72 characters.
-- Content: Be direct, try to eliminate filler words and phrases in these sentences (examples: though, maybe, I think, kind of). Think like a journalist.
-- use atomic commits: Break down your changes into small, atomic commits. This makes it easier to review and understand the changes.
+- while using conventional commits, remember to use all lowercase.
+- use imperative mood in the subject line.
+  Example: fix: add fix for dark mode toggle state.
+- specify the type of commit. It is recommended and can be even more beneficial to have a consistent set of words to describe your changes.
+- the first line should ideally be no longer than 50 characters, and the body should be restricted to 72 characters.
+- be direct, try to eliminate filler words and phrases in these sentences (examples: though, maybe, I think, kind of). Think like a journalist.
+- break down your changes into small, atomic commits. This makes it easier to review and understand the changes.
 - every code change should be atomic
 - limit the subject line to 50 characters
-- capitalize the subject line
 - do not end the subject line with a period
 - separate the body from the subject with a blank line
 - use the imperative mood in the subject line
@@ -208,20 +186,15 @@ The most important part of a commit message is that it should be clear and meani
 
 ## Writing a great commit message checklist
 
-- [ ] Separate the subject from the body with a blank line
-- [ ] Limit the subject line to 50 characters
-- [ ] Capitalize the subject line
-- [ ] Do not end the subject line with a period
-- [ ] Wrap the body at 72 characters
-- [ ] Separate the body from the subject with a blank line
-- [ ] Use the imperative mood in the subject line
-- [ ] Use the body to explain what and why not how
-- [ ] You and your team should have a consistent commit message style
-- [ ] Use atomic commits: Break down your changes into small, atomic commits. This makes it easier to review and understand the changes.
-- [ ] Every code change should be atomic
-- [ ] Limit the subject line to 50 characters
-- [ ] Capitalize the subject line
-- [ ] does the message contain the what and why
+- [ ] the commit is atomic
+- [ ] the commit message is in lowercase
+- [ ] imperative mood is used
+- [ ] the subject line is limited to 50 characters
+- [ ] the body is limited to 72 characters
+- [ ] the body is used to explain what and why not how
+- [ ] the subject line is not ending with a period
+- [ ] the commit message is clear and meaningful
+- [ ] you and your team should have a consistent commit message style
 
 ## Resources
 
