@@ -4,7 +4,7 @@ title: memory
 description: how memory works
 tags:
   - fundamentals
-lastmod: 2023-09-02
+lastmod: 2024-10-04
 published: true
 ---
 
@@ -17,11 +17,12 @@ published: true
 ## memory layout in C
 
 It's organized in the following fashion
+
 - empty space -> high address | -> command-line arguments and environment variables
 - stack segment
 - heap segment
 - uninitialized data segments (bbs)| -> initialized to 0 by execution
-- initialized data segments        | -> read from program file by execution
+- initialized data segments | -> read from program file by execution
 - text/code segment -> low address | -> read from program file by execution
 
 ### text/code segment
@@ -64,7 +65,7 @@ It's organized in the following fashion
 - grows downward
   - items deeper in the call chain are ate numerically lower addresses and toward the heap
 - when the stack pointer meet the heap pointer, free memory is exhausted and results in a stack overflow error
-- this is how the recursive functions in c works, each time a recursive function calls itself, a  new stack frame is used, so one set of variables doesn't interfere with the variables from another instance of the function
+- this is how the recursive functions in c works, each time a recursive function calls itself, a new stack frame is used, so one set of variables doesn't interfere with the variables from another instance of the function
 - the size of the stack is will be decided by the operating system and the compiler
 
 ### empty space
@@ -85,6 +86,7 @@ malloc() // heap segment
 ```
 
 ## types of memory allocations
+
 - static memory allocation
 - dynamic memory allocation
 
@@ -114,4 +116,3 @@ malloc() // heap segment
 ## notes
 
 - you can't control any segment of the memory layout except the heap segment
-

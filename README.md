@@ -8,7 +8,6 @@ posts for my portfolio
 ---
 type:
 title:
-description:
 tags:
   - one
   - two
@@ -67,7 +66,6 @@ lastmod:
 
 - type
 - title
-- description
 - lastmod
 - tags
 - draft
