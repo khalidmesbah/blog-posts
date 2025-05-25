@@ -1,3 +1,9 @@
 [
-  "mdx-as-md-obsidian"
+  "mdx-as-md-obsidian",
+  "calendar",
+  "code-styler",
+  "highlightr-plugin",
+  "obsidian-enhancing-export",
+  "ninja-cursor",
+  "edit-in-neovim"
 ]

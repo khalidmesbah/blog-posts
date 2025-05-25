@@ -4,11 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "68967658bbe2a87f",
+        "id": "de1f0b44909669b8",
         "type": "tabs",
         "children": [
           {
-            "id": "22d744bfa4137bf4",
+            "id": "286a52bda1d19ef5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "things-to-do-when-you-bored.mdx",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "things-to-do-when-you-bored"
+            }
+          },
+          {
+            "id": "6a0e664286741b85",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -17,7 +31,8 @@
               "title": "New tab"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -143,6 +158,16 @@
               "icon": "lucide-list",
               "title": "Outline"
             }
+          },
+          {
+            "id": "044e6bbfd5bee387",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
           }
         ]
       }
@@ -156,23 +181,25 @@
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "daily-notes:Open today's daily note": false
     }
   },
-  "active": "22d744bfa4137bf4",
+  "active": "6a0e664286741b85",
   "lastOpenFiles": [
-    "firebase.mdx",
+    "things-to-do-when-you-bored.mdx",
+    "supabase.mdx",
     "auto-login-in-arch-linux.mdx",
-    "awk.mdx",
-    "cors.mdx",
-    "cdn.mdx",
-    "breathing.mdx",
-    "api.mdx",
-    "browser-extensions.mdx",
-    "data-science.mdx",
-    "anki.mdx",
-    "agile.mdx"
+    "Pasted image 20250502051304.png",
+    "faster-arch.mdx",
+    "sql.mdx",
+    "writing.mdx",
+    "will-ai-end-coding.mdx",
+    "using-libraries.mdx",
+    "ui-libraries.mdx",
+    "svg.mdx",
+    "pacman.mdx",
+    "2025-05-02.md"
   ]
 }
