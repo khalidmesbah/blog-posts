@@ -1,0 +1,11 @@
+{
+	"id": "mantou-ai",
+	"name": "MantouAI",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Work as a personal assistant for translation, writing polish, general Q&A, summarizing, using the power of large language models.",
+	"author": "Morino Pan",
+	"authorUrl": "https://ravensanstete.github.io/",
+	"fundingUrl": "",
+	"isDesktopOnly": false
+}

@@ -5,5 +5,13 @@
   "highlightr-plugin",
   "obsidian-enhancing-export",
   "ninja-cursor",
-  "edit-in-neovim"
+  "edit-in-neovim",
+  "obsidian-languagetool-plugin",
+  "obsidian-dictionary-plugin",
+  "harper",
+  "copilot",
+  "smart-connections",
+  "mantou-ai",
+  "translate",
+  "gemini-assistant"
 ]
